@@ -12,15 +12,15 @@
 # Рішення
    ![Image](https://github.com/user-attachments/assets/2c9d02b5-9f0d-41da-ac17-90f9ec322086)
 ###
-###   `let userName: string = "Dmytro";
-###   let age: number = 19;
-###   let bool: boolean = true;
-###   let arr: number[] = [1,2,3]; 
-###   let obj: {name: string; age: number} = {name:"John", age: 30};
-###
-###   function formatPerson(person: {name: string; age: number}): string{
-###    return `Name: ${person.name}, Age: ${person.age}` 
-###   }`
+###   `let userName: string = "Dmytro";`
+###   `let age: number = 19;`
+###   `let bool: boolean = true;`
+###   `let arr: number[] = [1,2,3];` 
+###   `let obj: {name: string; age: number} = {name:"John", age: 30};`
+###   ``
+###   `function formatPerson(person: {name: string; age: number}): string{`
+###   ` return `Name: ${person.name}, Age: ${person.age}` 
+###   `}`
 
 console.log(formatPerson(obj));
 # Результат
