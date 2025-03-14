@@ -13,6 +13,12 @@
    ![Image](https://github.com/user-attachments/assets/2c9d02b5-9f0d-41da-ac17-90f9ec322086)
 # Результат
    ![Image](https://github.com/user-attachments/assets/9cae7f30-cc5e-427b-8cb8-f41e6e55f823)
+# Помилки
+### Перевіримо, що буде якщо ми замість числа напишемо рядок, і навпаки
+   ![Image](https://github.com/user-attachments/assets/27550d54-7a5c-43b8-916c-001e6f9babe7)
+   ![Image](https://github.com/user-attachments/assets/d54c7fa9-73cd-4638-a356-3bd94e70e7a6)
+### Як бачимо TypeScript видає нам помилку, тому що він типизований і не дає змогу замість числа писати рядок і навпаки, чи замість булевого значення написати число і т.п.
+
 2. Інтерфейси
 2.1 Оголосіть інтерфейс Person, який містить поля:
     name: string
