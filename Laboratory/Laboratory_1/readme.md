@@ -11,6 +11,18 @@
 ### 1.2 Створіть функцію, яка приймає як аргумент об'єкт із полями `name` (тип `string`) та `age` (тип `number`) і повертає рядок виду: `"Name: John, Age: 30"`
 # Рішення
    ![Image](https://github.com/user-attachments/assets/2c9d02b5-9f0d-41da-ac17-90f9ec322086)
+###
+###   `let userName: string = "Dmytro";
+###   let age: number = 19;
+###   let bool: boolean = true;
+###   let arr: number[] = [1,2,3]; 
+###   let obj: {name: string; age: number} = {name:"John", age: 30};
+###
+###   function formatPerson(person: {name: string; age: number}): string{
+###    return `Name: ${person.name}, Age: ${person.age}` 
+###   }`
+
+console.log(formatPerson(obj));
 # Результат
    ![Image](https://github.com/user-attachments/assets/9cae7f30-cc5e-427b-8cb8-f41e6e55f823)
 # Помилки
@@ -81,6 +93,7 @@
 ![Errors_Task_5](https://github.com/user-attachments/assets/88b55f33-5ea5-472f-bf54-412cd931d998)
 ### TypeScript знову пише, що булеве значення не може бути строкою.
 
+# .JS i .D.TS
 ### Тепер розглянемо, як виглядають ці файли у скомпільованому JS-коді.
 ![Image](https://github.com/user-attachments/assets/fb6c1295-bf9b-47f4-95dd-ac69cfa35896)
 ![Image](https://github.com/user-attachments/assets/4ae6b849-8a32-4d8b-995c-1d239ec2e97b)
