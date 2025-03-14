@@ -11,18 +11,7 @@
 ### 1.2 Створіть функцію, яка приймає як аргумент об'єкт із полями `name` (тип `string`) та `age` (тип `number`) і повертає рядок виду: `"Name: John, Age: 30"`
 # Рішення
    ![Image](https://github.com/user-attachments/assets/2c9d02b5-9f0d-41da-ac17-90f9ec322086)
-###
-###   `let userName: string = "Dmytro";`
-###   `let age: number = 19;`
-###   `let bool: boolean = true;`
-###   `let arr: number[] = [1,2,3];` 
-###   `let obj: {name: string; age: number} = {name:"John", age: 30};`
-###   ``
-###   `function formatPerson(person: {name: string; age: number}): string{`
-###   ` return `Name: ${person.name}, Age: ${person.age}` 
-###   `}`
 
-console.log(formatPerson(obj));
 # Результат
    ![Image](https://github.com/user-attachments/assets/9cae7f30-cc5e-427b-8cb8-f41e6e55f823)
 # Помилки
@@ -39,6 +28,7 @@ console.log(formatPerson(obj));
 ### 2.2 Реалізуйте функцію `printPerson`, яка приймає об'єкт типу `Person` та виводить його дані у консоль.
 # Рішення
 ![Image](https://github.com/user-attachments/assets/7776109c-e4e6-4a45-a348-63f980f5164d)
+
 # Результат
 ![Image](https://github.com/user-attachments/assets/03230da0-8dac-44d6-a92c-370598c628ad)
 # Помилки
