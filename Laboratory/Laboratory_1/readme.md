@@ -10,7 +10,7 @@
 1.1 Оголосіть змінні наступних типів: string, number, boolean, array, object.
 1.2 Створіть функцію, яка приймає як аргумент об'єкт із полями name (тип string) та age (тип number) і повертає рядок виду: "Name: John, Age: 30".
    Рішення
-   (/images/Task_1.png)
+   ![Image](https://github.com/user-attachments/assets/2c9d02b5-9f0d-41da-ac17-90f9ec322086)
 
 3. Інтерфейси
 2.1 Оголосіть інтерфейс Person, який містить поля:
