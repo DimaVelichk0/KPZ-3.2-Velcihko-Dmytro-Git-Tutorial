@@ -1,0 +1,1336 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories
+$ mkdir work
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories
+$ cd work
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work
+$ touch hello.html
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work
+$ nvim hello.html
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work
+$
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work
+$ git init
+Initialized empty Git repository in D:/all you need/Общее/учеба/Git tutor/githowto/repositories/work/.git/
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git add hello.html
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git comit -m "Initial Comit"
+git: 'comit' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git commit -m "Initial Comit"
+[main (root-commit) 937b340] Initial Comit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello.html
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ nvim hello.html
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$	
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git add hello.html
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   hello.html
+
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git commit
+Added h1 tag
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch main
+# Changes to be committed:
+#       modified:   hello.html
+#
+
+[main a31cf4c] Added h1 tag
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ nvim hello.html
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git add hello.html
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ nvim hello.html
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   hello.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello.html
+
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git commit -m "Added standard HTML page tags"
+[main 205f3f9] Added standard HTML page tags
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git add .
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   hello.html
+
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git commit -m "Added HTML header"
+[main 9b6ab77] Added HTML header
+ 1 file changed, 3 insertions(+)
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git log
+commit 9b6ab7710eeb16dfe8d683b312d0725dbb658ec7 (HEAD -> main)
+Author: Dmytro <dima2005157@gmail.com>
+Date:   Mon Mar 10 18:42:55 2025 +0200
+
+    Added HTML header
+
+commit 205f3f95c3bed0727150184cb3ba882fe0d86465
+Author: Dmytro <dima2005157@gmail.com>
+Date:   Mon Mar 10 18:40:55 2025 +0200
+
+    Added standard HTML page tags
+
+commit a31cf4cb45f3581757a69c79fd6350c99425e3ed
+Author: Dmytro <dima2005157@gmail.com>
+Date:   Mon Mar 10 18:29:56 2025 +0200
+
+    Added h1 tag
+
+commit 937b340b521e2191b4dac1f1fac9b46c261d24f0
+Author: Dmytro <dima2005157@gmail.com>
+Date:   Mon Mar 10 18:13:32 2025 +0200
+
+    Initial Comit
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git log --pretty=oneline
+9b6ab7710eeb16dfe8d683b312d0725dbb658ec7 (HEAD -> main) Added HTML header
+205f3f95c3bed0727150184cb3ba882fe0d86465 Added standard HTML page tags
+a31cf4cb45f3581757a69c79fd6350c99425e3ed Added h1 tag
+937b340b521e2191b4dac1f1fac9b46c261d24f0 Initial Comit
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git log --oneline --max-count=2
+9b6ab77 (HEAD -> main) Added HTML header
+205f3f9 Added standard HTML page tags
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git log --oneline --since="5 minutes ago"
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git log --oneline --since="5 minutes ago"
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git log --oneline --until="5 minutes ago"
+9b6ab77 (HEAD -> main) Added HTML header
+205f3f9 Added standard HTML page tags
+a31cf4c Added h1 tag
+937b340 Initial Comit
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git log --oneline --author="Dmytro"
+9b6ab77 (HEAD -> main) Added HTML header
+205f3f9 Added standard HTML page tags
+a31cf4c Added h1 tag
+937b340 Initial Comit
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git log --oneline --all
+9b6ab77 (HEAD -> main) Added HTML header
+205f3f9 Added standard HTML page tags
+a31cf4c Added h1 tag
+937b340 Initial Comit
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git log --all --pretty=format:"%h %cd %s (%an)" --since="7 days ago"
+9b6ab77 Mon Mar 10 18:42:55 2025 +0200 Added HTML header (Dmytro)
+205f3f9 Mon Mar 10 18:40:55 2025 +0200 Added standard HTML page tags (Dmytro)
+a31cf4c Mon Mar 10 18:29:56 2025 +0200 Added h1 tag (Dmytro)
+937b340 Mon Mar 10 18:13:32 2025 +0200 Initial Comit (Dmytro)
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git log --pretty=format:"%h %ad | %s%d [%an]" --date=short
+9b6ab77 2025-03-10 | Added HTML header (HEAD -> main) [Dmytro]
+205f3f9 2025-03-10 | Added standard HTML page tags [Dmytro]
+a31cf4c 2025-03-10 | Added h1 tag [Dmytro]
+937b340 2025-03-10 | Initial Comit [Dmytro]
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git config --global format.pretty '%h %ad | %s%d [%an]'
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git config --global log.date short
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ gitk
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git log
+9b6ab77 2025-03-10 | Added HTML header (HEAD -> main) [Dmytro]
+205f3f9 2025-03-10 | Added standard HTML page tags [Dmytro]
+a31cf4c 2025-03-10 | Added h1 tag [Dmytro]
+937b340 2025-03-10 | Initial Comit [Dmytro]
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git checkout <hash>
+bash: syntax error near unexpected token `newline'
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git checkout <hash>
+bash: syntax error near unexpected token `newline'
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git checkout 937b340
+Note: switching to '937b340'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 937b340 Initial Comit
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work ((937b340...))
+$ cat hello.world
+cat: hello.world: No such file or directory
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work ((937b340...))
+$ cat hello.html
+Hello, world
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work ((937b340...))
+$ git switch main
+Previous HEAD position was 937b340 Initial Comit
+Switched to branch 'main'
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ cat hello.html
+<html>
+  <head>
+  </head>
+  <body>
+    <h1>Hello, world</h1>
+  </body>
+</html>
+
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git tag v1
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git log
+9b6ab77 2025-03-10 | Added HTML header (HEAD -> main, tag: v1) [Dmytro]
+205f3f9 2025-03-10 | Added standard HTML page tags [Dmytro]
+a31cf4c 2025-03-10 | Added h1 tag [Dmytro]
+937b340 2025-03-10 | Initial Comit [Dmytro]
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git checkout v1^
+Note: switching to 'v1^'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 205f3f9 Added standard HTML page tags
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work ((205f3f9...))
+$ cat hello.html
+<html>
+  <body>
+    <h1>Hello, world</h1>
+  </body>
+</html>
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work ((205f3f9...))
+$ git tag v1-beta
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work ((v1-beta))
+$ git log
+205f3f9 2025-03-10 | Added standard HTML page tags (HEAD, tag: v1-beta) [Dmytro]
+a31cf4c 2025-03-10 | Added h1 tag [Dmytro]
+937b340 2025-03-10 | Initial Comit [Dmytro]
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work ((v1-beta))
+$ git checkout v1
+Previous HEAD position was 205f3f9 Added standard HTML page tags
+HEAD is now at 9b6ab77 Added HTML header
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work ((v1))
+$ git checkout v1-beta
+Previous HEAD position was 9b6ab77 Added HTML header
+HEAD is now at 205f3f9 Added standard HTML page tags
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work ((v1-beta))
+$ git tag
+v1
+v1-beta
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work ((v1-beta))
+$ git log main --all
+9b6ab77 2025-03-10 | Added HTML header (tag: v1, main) [Dmytro]
+205f3f9 2025-03-10 | Added standard HTML page tags (HEAD, tag: v1-beta) [Dmytro]
+a31cf4c 2025-03-10 | Added h1 tag [Dmytro]
+937b340 2025-03-10 | Initial Comit [Dmytro]
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work ((v1-beta))
+$
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work ((v1-beta))
+$ git switch main
+Previous HEAD position was 205f3f9 Added standard HTML page tags
+Switched to branch 'main'
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ nvim hello.html
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git restore hello.html
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ cat hello.html
+<html>
+  <head>
+  </head>
+  <body>
+    <h1>Hello, world</h1>
+  </body>
+</html>
+
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ nvim hello.html
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git add hello.html
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   hello.html
+
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git restore --staged hello.html
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git restore hello.html
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ nvim hello.html
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git add hello.html
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git commit -m "Oops, we didn't want this commit"
+[main a966b56] Oops, we didn't want this commit
+ 1 file changed, 1 insertion(+)
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git revert HEAD
+[main 96c756f] Revert "Oops, we didn't want this commit"
+ 1 file changed, 1 deletion(-)
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git log
+96c756f 2025-03-10 | Revert "Oops, we didn't want this commit" (HEAD -> main) [Dmytro]
+a966b56 2025-03-10 | Oops, we didn't want this commit [Dmytro]
+9b6ab77 2025-03-10 | Added HTML header (tag: v1) [Dmytro]
+205f3f9 2025-03-10 | Added standard HTML page tags (tag: v1-beta) [Dmytro]
+a31cf4c 2025-03-10 | Added h1 tag [Dmytro]
+937b340 2025-03-10 | Initial Comit [Dmytro]
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git log
+96c756f 2025-03-10 | Revert "Oops, we didn't want this commit" (HEAD -> main) [Dmytro]
+a966b56 2025-03-10 | Oops, we didn't want this commit [Dmytro]
+9b6ab77 2025-03-10 | Added HTML header (tag: v1) [Dmytro]
+205f3f9 2025-03-10 | Added standard HTML page tags (tag: v1-beta) [Dmytro]
+a31cf4c 2025-03-10 | Added h1 tag [Dmytro]
+937b340 2025-03-10 | Initial Comit [Dmytro]
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git tag oops
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git log
+96c756f 2025-03-10 | Revert "Oops, we didn't want this commit" (HEAD -> main, tag: oops) [Dmytro]
+a966b56 2025-03-10 | Oops, we didn't want this commit [Dmytro]
+9b6ab77 2025-03-10 | Added HTML header (tag: v1) [Dmytro]
+205f3f9 2025-03-10 | Added standard HTML page tags (tag: v1-beta) [Dmytro]
+a31cf4c 2025-03-10 | Added h1 tag [Dmytro]
+937b340 2025-03-10 | Initial Comit [Dmytro]
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git reset --hard v1
+HEAD is now at 9b6ab77 Added HTML header
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git log
+9b6ab77 2025-03-10 | Added HTML header (HEAD -> main, tag: v1) [Dmytro]
+205f3f9 2025-03-10 | Added standard HTML page tags (tag: v1-beta) [Dmytro]
+a31cf4c 2025-03-10 | Added h1 tag [Dmytro]
+937b340 2025-03-10 | Initial Comit [Dmytro]
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git log --all
+96c756f 2025-03-10 | Revert "Oops, we didn't want this commit" (tag: oops) [Dmytro]
+a966b56 2025-03-10 | Oops, we didn't want this commit [Dmytro]
+9b6ab77 2025-03-10 | Added HTML header (HEAD -> main, tag: v1) [Dmytro]
+205f3f9 2025-03-10 | Added standard HTML page tags (tag: v1-beta) [Dmytro]
+a31cf4c 2025-03-10 | Added h1 tag [Dmytro]
+937b340 2025-03-10 | Initial Comit [Dmytro]
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git tag -d oops
+Deleted tag 'oops' (was 96c756f)
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git log --all
+9b6ab77 2025-03-10 | Added HTML header (HEAD -> main, tag: v1) [Dmytro]
+205f3f9 2025-03-10 | Added standard HTML page tags (tag: v1-beta) [Dmytro]
+a31cf4c 2025-03-10 | Added h1 tag [Dmytro]
+937b340 2025-03-10 | Initial Comit [Dmytro]
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ nvim hello.html
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git add hello.html
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git commit -m "Added copyright statement"
+[main ce0884d] Added copyright statement
+ 1 file changed, 1 insertion(+)
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git log
+ce0884d 2025-03-10 | Added copyright statement (HEAD -> main) [Dmytro]
+9b6ab77 2025-03-10 | Added HTML header (tag: v1) [Dmytro]
+205f3f9 2025-03-10 | Added standard HTML page tags (tag: v1-beta) [Dmytro]
+a31cf4c 2025-03-10 | Added h1 tag [Dmytro]
+937b340 2025-03-10 | Initial Comit [Dmytro]
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ nvim hello.html
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git add hello.html
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git commit --amend -m "Added copyright statement with email"
+[main c410e88] Added copyright statement with email
+ Date: Mon Mar 10 20:02:54 2025 +0200
+ 1 file changed, 1 insertion(+)
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git log
+c410e88 2025-03-10 | Added copyright statement with email (HEAD -> main) [Dmytro]
+9b6ab77 2025-03-10 | Added HTML header (tag: v1) [Dmytro]
+205f3f9 2025-03-10 | Added standard HTML page tags (tag: v1-beta) [Dmytro]
+a31cf4c 2025-03-10 | Added h1 tag [Dmytro]
+937b340 2025-03-10 | Initial Comit [Dmytro]
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git switch -c style
+Switched to a new branch 'style'
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (style)
+$ git status
+On branch style
+nothing to commit, working tree clean
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (style)
+$ touch style.css
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (style)
+$ nvim style.css
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (style)
+$ git add style.css
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (style)
+$ git commit -m "Added css stylesheet"
+[style 58031fb] Added css stylesheet
+ 1 file changed, 4 insertions(+)
+ create mode 100644 style.css
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (style)
+$ nvim hello.html
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (style)
+$ git add hello.html
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (style)
+$ git commit -m "Included stylesheet into hello.html"
+[style 14af3d6] Included stylesheet into hello.html
+ 1 file changed, 1 insertion(+)
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (style)
+$
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (style)
+$ git log --all
+14af3d6 2025-03-10 | Included stylesheet into hello.html (HEAD -> style) [Dmytro]
+58031fb 2025-03-10 | Added css stylesheet [Dmytro]
+c410e88 2025-03-10 | Added copyright statement with email (main) [Dmytro]
+9b6ab77 2025-03-10 | Added HTML header (tag: v1) [Dmytro]
+205f3f9 2025-03-10 | Added standard HTML page tags (tag: v1-beta) [Dmytro]
+a31cf4c 2025-03-10 | Added h1 tag [Dmytro]
+937b340 2025-03-10 | Initial Comit [Dmytro]
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (style)
+$ git switch main
+Switched to branch 'main'
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ cat hello.html
+<!-- Author: Alexander Shvets (alex@githowto.com) -->
+<html>
+  <head>
+  </head>
+  <body>
+    <h1>Hello, world</h1>
+  </body>
+</html>
+
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git switch style
+Switched to branch 'style'
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (style)
+$ cat hello.html
+<!-- Author: Alexander Shvets (alex@githowto.com) -->
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" media="all" href="style.css" />
+  </head>
+  <body>
+    <h1>Hello, world</h1>
+  </body>
+</html>
+
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (style)
+$
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (style)
+$ git log hello.html
+14af3d6 2025-03-10 | Included stylesheet into hello.html (HEAD -> style) [Dmytro]
+c410e88 2025-03-10 | Added copyright statement with email (main) [Dmytro]
+9b6ab77 2025-03-10 | Added HTML header (tag: v1) [Dmytro]
+205f3f9 2025-03-10 | Added standard HTML page tags (tag: v1-beta) [Dmytro]
+a31cf4c 2025-03-10 | Added h1 tag [Dmytro]
+937b340 2025-03-10 | Initial Comit [Dmytro]
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (style)
+$ git log style.css
+58031fb 2025-03-10 | Added css stylesheet [Dmytro]
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (style)
+$ git show v1
+9b6ab77 2025-03-10 | Added HTML header (tag: v1) [Dmytro]
+
+diff --git a/hello.html b/hello.html
+index bd11108..f9ca1fe 100644
+--- a/hello.html
++++ b/hello.html
+@@ -1,5 +1,8 @@
+ <html>
++  <head>
++  </head>
+   <body>
+     <h1>Hello, world</h1>
+   </body>
+ </html>
++
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (style)
+$ mv hello.html index.html
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (style)
+$ git status
+On branch style
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    hello.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (style)
+$ git add .
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (style)
+$ git status
+On branch style
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    hello.html -> index.html
+
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (style)
+$ mkdir css
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (style)
+$ git mv style.css css/style.css
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (style)
+$ git status
+On branch style
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    style.css -> css/style.css
+        renamed:    hello.html -> index.html
+
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (style)
+$ git commit -m "Renamed hello.html; moved style.css"
+[style 37345ad] Renamed hello.html; moved style.css
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ rename style.css => css/style.css (100%)
+ rename hello.html => index.html (100%)
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (style)
+$ git log css/style.css
+37345ad 2025-03-10 | Renamed hello.html; moved style.css (HEAD -> style) [Dmytro]
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (style)
+$ git log --follow css/style.css
+37345ad 2025-03-10 | Renamed hello.html; moved style.css (HEAD -> style) [Dmytro]
+58031fb 2025-03-10 | Added css stylesheet [Dmytro]
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (style)
+$
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (style)
+$ nvim README
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (style)
+$ git switch main
+Switched to branch 'main'
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git add README
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git commit -m "Added README"
+[main 9b72d64] Added README
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git log --all --graph
+* 9b72d64 2025-03-10 | Added README (HEAD -> main) [Dmytro]
+| * 37345ad 2025-03-10 | Renamed hello.html; moved style.css (style) [Dmytro]
+| * 14af3d6 2025-03-10 | Included stylesheet into hello.html [Dmytro]
+| * 58031fb 2025-03-10 | Added css stylesheet [Dmytro]
+|/
+* c410e88 2025-03-10 | Added copyright statement with email [Dmytro]
+* 9b6ab77 2025-03-10 | Added HTML header (tag: v1) [Dmytro]
+* 205f3f9 2025-03-10 | Added standard HTML page tags (tag: v1-beta) [Dmytro]
+* a31cf4c 2025-03-10 | Added h1 tag [Dmytro]
+* 937b340 2025-03-10 | Initial Comit [Dmytro]
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git switch style
+Switched to branch 'style'
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (style)
+$ git merge main
+Merge made by the 'ort' strategy.
+ README | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (style)
+$ git log --all --graph
+*   fd5481e 2025-03-10 | Merge branch 'main' into style (HEAD -> style) [Dmytro]
+|\
+| * 9b72d64 2025-03-10 | Added README (main) [Dmytro]
+* | 37345ad 2025-03-10 | Renamed hello.html; moved style.css [Dmytro]
+* | 14af3d6 2025-03-10 | Included stylesheet into hello.html [Dmytro]
+* | 58031fb 2025-03-10 | Added css stylesheet [Dmytro]
+|/
+* c410e88 2025-03-10 | Added copyright statement with email [Dmytro]
+* 9b6ab77 2025-03-10 | Added HTML header (tag: v1) [Dmytro]
+* 205f3f9 2025-03-10 | Added standard HTML page tags (tag: v1-beta) [Dmytro]
+* a31cf4c 2025-03-10 | Added h1 tag [Dmytro]
+* 937b340 2025-03-10 | Initial Comit [Dmytro]
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (style)
+$
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (style)
+$ git switch main
+Switched to branch 'main'
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ nvim hello.html
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git add hello.html
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git commit -m "Added meta title"
+[main 07015f1] Added meta title
+ 1 file changed, 2 insertions(+)
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git log --all --graph
+* 07015f1 2025-03-10 | Added meta title (HEAD -> main) [Dmytro]
+| *   fd5481e 2025-03-10 | Merge branch 'main' into style (style) [Dmytro]
+| |\
+| |/
+|/|
+* | 9b72d64 2025-03-10 | Added README [Dmytro]
+| * 37345ad 2025-03-10 | Renamed hello.html; moved style.css [Dmytro]
+| * 14af3d6 2025-03-10 | Included stylesheet into hello.html [Dmytro]
+| * 58031fb 2025-03-10 | Added css stylesheet [Dmytro]
+|/
+* c410e88 2025-03-10 | Added copyright statement with email [Dmytro]
+* 9b6ab77 2025-03-10 | Added HTML header (tag: v1) [Dmytro]
+* 205f3f9 2025-03-10 | Added standard HTML page tags (tag: v1-beta) [Dmytro]
+* a31cf4c 2025-03-10 | Added h1 tag [Dmytro]
+* 937b340 2025-03-10 | Initial Comit [Dmytro]
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git switch style
+Switched to branch 'style'
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (style)
+$ git merge main
+Auto-merging index.html
+CONFLICT (content): Merge conflict in index.html
+Automatic merge failed; fix conflicts and then commit the result.
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (style|MERGING)
+$ git status
+On branch style
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (style|MERGING)
+$ nvim index.html
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (style|MERGING)
+$ git merge --abort
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (style)
+$ git status
+On branch style
+nothing to commit, working tree clean
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (style)
+$ git merge main
+Auto-merging index.html
+CONFLICT (content): Merge conflict in index.html
+Automatic merge failed; fix conflicts and then commit the result.
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (style|MERGING)
+$ nvim index.html
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (style|MERGING)
+$ git add index.html
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (style|MERGING)
+$ git commit -m "Resolved merge conflict"
+[style 1fad50e] Resolved merge conflict
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (style)
+$ git status
+On branch style
+nothing to commit, working tree clean
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (style)
+$ git log --all --graph
+*   1fad50e 2025-03-10 | Resolved merge conflict (HEAD -> style) [Dmytro]
+|\
+| * 07015f1 2025-03-10 | Added meta title (main) [Dmytro]
+* | fd5481e 2025-03-10 | Merge branch 'main' into style [Dmytro]
+|\|
+| * 9b72d64 2025-03-10 | Added README [Dmytro]
+* | 37345ad 2025-03-10 | Renamed hello.html; moved style.css [Dmytro]
+* | 14af3d6 2025-03-10 | Included stylesheet into hello.html [Dmytro]
+* | 58031fb 2025-03-10 | Added css stylesheet [Dmytro]
+|/
+* c410e88 2025-03-10 | Added copyright statement with email [Dmytro]
+* 9b6ab77 2025-03-10 | Added HTML header (tag: v1) [Dmytro]
+* 205f3f9 2025-03-10 | Added standard HTML page tags (tag: v1-beta) [Dmytro]
+* a31cf4c 2025-03-10 | Added h1 tag [Dmytro]
+* 937b340 2025-03-10 | Initial Comit [Dmytro]
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (style)
+$
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (style)
+$ git switch style
+Already on 'style'
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (style)
+$ git log --graph
+*   1fad50e 2025-03-10 | Resolved merge conflict (HEAD -> style) [Dmytro]
+|\
+| * 07015f1 2025-03-10 | Added meta title (main) [Dmytro]
+* | fd5481e 2025-03-10 | Merge branch 'main' into style [Dmytro]
+|\|
+| * 9b72d64 2025-03-10 | Added README [Dmytro]
+* | 37345ad 2025-03-10 | Renamed hello.html; moved style.css [Dmytro]
+* | 14af3d6 2025-03-10 | Included stylesheet into hello.html [Dmytro]
+* | 58031fb 2025-03-10 | Added css stylesheet [Dmytro]
+|/
+* c410e88 2025-03-10 | Added copyright statement with email [Dmytro]
+* 9b6ab77 2025-03-10 | Added HTML header (tag: v1) [Dmytro]
+* 205f3f9 2025-03-10 | Added standard HTML page tags (tag: v1-beta) [Dmytro]
+* a31cf4c 2025-03-10 | Added h1 tag [Dmytro]
+* 937b340 2025-03-10 | Initial Comit [Dmytro]
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (style)
+$ git reset --hard HEAD~2
+HEAD is now at 37345ad Renamed hello.html; moved style.css
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (style)
+$ git log --graph
+* 37345ad 2025-03-10 | Renamed hello.html; moved style.css (HEAD -> style) [Dmytro]
+* 14af3d6 2025-03-10 | Included stylesheet into hello.html [Dmytro]
+* 58031fb 2025-03-10 | Added css stylesheet [Dmytro]
+* c410e88 2025-03-10 | Added copyright statement with email [Dmytro]
+* 9b6ab77 2025-03-10 | Added HTML header (tag: v1) [Dmytro]
+* 205f3f9 2025-03-10 | Added standard HTML page tags (tag: v1-beta) [Dmytro]
+* a31cf4c 2025-03-10 | Added h1 tag [Dmytro]
+* 937b340 2025-03-10 | Initial Comit [Dmytro]
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (style)
+$
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (style)
+$ git switch style
+Already on 'style'
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (style)
+$ git rebase main
+Auto-merging hello.html
+CONFLICT (content): Merge conflict in hello.html
+error: could not apply 14af3d6... Included stylesheet into hello.html
+hint: Resolve all conflicts manually, mark them as resolved with
+hint: "git add/rm <conflicted_files>", then run "git rebase --continue".
+hint: You can instead skip this commit: run "git rebase --skip".
+hint: To abort and get back to the state before "git rebase", run "git rebase --abort".
+Could not apply 14af3d6... Included stylesheet into hello.html
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (style|REBASE 2/3)
+$ git status
+interactive rebase in progress; onto 07015f1
+Last commands done (2 commands done):
+   pick 58031fb Added css stylesheet
+   pick 14af3d6 Included stylesheet into hello.html
+Next command to do (1 remaining command):
+   pick 37345ad Renamed hello.html; moved style.css
+  (use "git rebase --edit-todo" to view and edit)
+You are currently rebasing branch 'style' on '07015f1'.
+  (fix conflicts and then run "git rebase --continue")
+  (use "git rebase --skip" to skip this patch)
+  (use "git rebase --abort" to check out the original branch)
+
+Unmerged paths:
+  (use "git restore --staged <file>..." to unstage)
+  (use "git add <file>..." to mark resolution)
+        both modified:   hello.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (style|REBASE 2/3)
+$ nvim hello.html
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (style|REBASE 2/3)
+$ nvim hello.html
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (style|REBASE 2/3)
+$ git add .
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (style|REBASE 2/3)
+$ git rebase --continue
+[detached HEAD b57c804] Included stylesheet into hello.html
+ 1 file changed, 1 insertion(+)
+Successfully rebased and updated refs/heads/style.
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (style)
+$ git status
+On branch style
+nothing to commit, working tree clean
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (style)
+$ git log --all --graph
+* ea7021a 2025-03-10 | Renamed hello.html; moved style.css (HEAD -> style) [Dmytro]
+* b57c804 2025-03-10 | Included stylesheet into hello.html [Dmytro]
+* 8da2d61 2025-03-10 | Added css stylesheet [Dmytro]
+* 07015f1 2025-03-10 | Added meta title (main) [Dmytro]
+* 9b72d64 2025-03-10 | Added README [Dmytro]
+* c410e88 2025-03-10 | Added copyright statement with email [Dmytro]
+* 9b6ab77 2025-03-10 | Added HTML header (tag: v1) [Dmytro]
+* 205f3f9 2025-03-10 | Added standard HTML page tags (tag: v1-beta) [Dmytro]
+* a31cf4c 2025-03-10 | Added h1 tag [Dmytro]
+* 937b340 2025-03-10 | Initial Comit [Dmytro]
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (style)
+$
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (style)
+$ git switch main
+Switched to branch 'main'
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git merge style
+Updating 07015f1..ea7021a
+Fast-forward
+ css/style.css            | 4 ++++
+ hello.html => index.html | 1 +
+ 2 files changed, 5 insertions(+)
+ create mode 100644 css/style.css
+ rename hello.html => index.html (72%)
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git log --all --graph
+* ea7021a 2025-03-10 | Renamed hello.html; moved style.css (HEAD -> main, style) [Dmytro]
+* b57c804 2025-03-10 | Included stylesheet into hello.html [Dmytro]
+* 8da2d61 2025-03-10 | Added css stylesheet [Dmytro]
+* 07015f1 2025-03-10 | Added meta title [Dmytro]
+* 9b72d64 2025-03-10 | Added README [Dmytro]
+* c410e88 2025-03-10 | Added copyright statement with email [Dmytro]
+* 9b6ab77 2025-03-10 | Added HTML header (tag: v1) [Dmytro]
+* 205f3f9 2025-03-10 | Added standard HTML page tags (tag: v1-beta) [Dmytro]
+* a31cf4c 2025-03-10 | Added h1 tag [Dmytro]
+* 937b340 2025-03-10 | Initial Comit [Dmytro]
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ cd ..
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories
+$ pwd
+/d/all you need/Общее/учеба/Git tutor/githowto/repositories
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories
+$ ls
+work/
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories
+$ git clone work home
+Cloning into 'home'...
+done.
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories
+$ ls
+home/  work/
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories
+$
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories
+$ cd home
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/home (main)
+$ ls
+css/  index.html  README
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/home (main)
+$ git log --all
+ea7021a 2025-03-10 | Renamed hello.html; moved style.css (HEAD -> main, origin/style, origin/main, origin/HEAD) [Dmytro]
+b57c804 2025-03-10 | Included stylesheet into hello.html [Dmytro]
+8da2d61 2025-03-10 | Added css stylesheet [Dmytro]
+07015f1 2025-03-10 | Added meta title [Dmytro]
+9b72d64 2025-03-10 | Added README [Dmytro]
+c410e88 2025-03-10 | Added copyright statement with email [Dmytro]
+9b6ab77 2025-03-10 | Added HTML header (tag: v1) [Dmytro]
+205f3f9 2025-03-10 | Added standard HTML page tags (tag: v1-beta) [Dmytro]
+a31cf4c 2025-03-10 | Added h1 tag [Dmytro]
+937b340 2025-03-10 | Initial Comit [Dmytro]
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/home (main)
+$
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/home (main)
+$ git remote
+origin
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/home (main)
+$ git remote show origin
+* remote origin
+  Fetch URL: D:/all you need/Общее/учеба/Git tutor/githowto/repositories/work
+  Push  URL: D:/all you need/Общее/учеба/Git tutor/githowto/repositories/work
+  HEAD branch: main
+  Remote branches:
+    main  tracked
+    style tracked
+  Local branch configured for 'git pull':
+    main merges with remote main
+  Local ref configured for 'git push':
+    main pushes to main (up to date)
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/home (main)
+$
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/home (main)
+$ git branch
+* main
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/home (main)
+$ git branch -a
+* main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/main
+  remotes/origin/style
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/home (main)
+$
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/home (main)
+$ cd ../work
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ nvim README
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git add README
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git commit -m "Changed README in original repo"
+[main 0223813] Changed README in original repo
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ cd ../home
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/home (main)
+$ git fetch
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 372 bytes | 2.00 KiB/s, done.
+From D:/all you need/Общее/учеба/Git tutor/githowto/repositories/work
+   ea7021a..0223813  main       -> origin/main
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/home (main)
+$ git log --all
+0223813 2025-03-11 | Changed README in original repo (origin/main, origin/HEAD) [Dmytro]
+ea7021a 2025-03-10 | Renamed hello.html; moved style.css (HEAD -> main, origin/style) [Dmytro]
+b57c804 2025-03-10 | Included stylesheet into hello.html [Dmytro]
+8da2d61 2025-03-10 | Added css stylesheet [Dmytro]
+07015f1 2025-03-10 | Added meta title [Dmytro]
+9b72d64 2025-03-10 | Added README [Dmytro]
+c410e88 2025-03-10 | Added copyright statement with email [Dmytro]
+9b6ab77 2025-03-10 | Added HTML header (tag: v1) [Dmytro]
+205f3f9 2025-03-10 | Added standard HTML page tags (tag: v1-beta) [Dmytro]
+a31cf4c 2025-03-10 | Added h1 tag [Dmytro]
+937b340 2025-03-10 | Initial Comit [Dmytro]
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/home (main)
+$ cat README
+This is the Hello World example from the GitHowTo tutorial.
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/home (main)
+$
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/home (main)
+$ git merge origin/main
+Updating ea7021a..0223813
+Fast-forward
+ README | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/home (main)
+$ cat README
+This is the Hello World example from the Git tutorial.
+(changed in origin)
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/home (main)
+$ git pull
+Already up to date.
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/home (main)
+$
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/home (main)
+$ git branch --track style origin/style
+branch 'style' set up to track 'origin/style'.
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/home (main)
+$ git branch -a
+* main
+  style
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/main
+  remotes/origin/style
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/home (main)
+$ git log --max-count=2
+0223813 2025-03-11 | Changed README in original repo (HEAD -> main, origin/main, origin/HEAD) [Dmytro]
+ea7021a 2025-03-10 | Renamed hello.html; moved style.css (origin/style, style) [Dmytro]
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/home (main)
+$
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/home (main)
+$ cd ..
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories
+$ git clone --bare work work.git
+Cloning into bare repository 'work.git'...
+done.
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories
+$ ls work.git
+config  description  HEAD  hooks/  info/  objects/  packed-refs  refs/
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories
+$
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories
+$ cd work
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git remote add shared ../work.git
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ nvim README
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git switch main
+Already on 'main'
+M       README
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git add README
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git commit -m "Added shared comment to readme"
+[main 243639b] Added shared comment to readme
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ git push shared main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 398 bytes | 36.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To ../work.git
+   0223813..243639b  main -> main
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work (main)
+$ cd ../home
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/home (main)
+$ git remote add shared ../work.git
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/home (main)
+$ git branch --track shared main
+branch 'shared' set up to track 'main'.
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/home (main)
+$ git pull shared main
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 378 bytes | 2.00 KiB/s, done.
+From ../work
+ * branch            main       -> FETCH_HEAD
+ * [new branch]      main       -> shared/main
+Updating 0223813..243639b
+Fast-forward
+ README | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/home (main)
+$ cat README
+This is the Hello World example from the Git tutorial.
+(changed in the origin and pushed to shared)
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/home (main)
+$
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/home (main)
+$ cd ..
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories
+$ git daemon --verbose --export-all --base-path=.
+[19148] Ready to rumble
+[1572] Connection from [::1]:64741
+[1572] unable to set SO_KEEPALIVE on socket: Input/output error
+[1572] Extended attribute "host": localhost
+[1572] Extended attribute "protocol": version=2
+[1572] Request upload-pack for '/work.git'
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories
+$ git clone git://localhost/work.git network_work
+Cloning into 'network_work'...
+remote: Enumerating objects: 36, done.
+remote: Counting objects: 100% (36/36), done.
+remote: Compressing objects: 100% (27/27), done.
+remote: Total 36 (delta 4), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (36/36), done.
+Resolving deltas: 100% (4/4), done.
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories
+$ cd network_work
+
+dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/network_work (main)
+$ ls
+css/  index.html  README
