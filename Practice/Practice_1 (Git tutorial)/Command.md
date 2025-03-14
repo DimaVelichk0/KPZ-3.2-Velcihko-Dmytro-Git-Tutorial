@@ -10,7 +10,7 @@ $ touch hello.html
 dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work
 $ nvim hello.html
 
-![Image alt](https://github.com/dima2005-gif/KPZ-3.2-Velcihko-Dmytro-Git-Tutorial/tree/main/git%20tutor/_3.png)
+(https://github.com/dima2005-gif/KPZ-3.2-Velcihko-Dmytro-Git-Tutorial/tree/main/git%20tutor/_3.png)
 
 dima2@DESKTOP-O8IIC2U MINGW64 /d/all you need/Общее/учеба/Git tutor/githowto/repositories/work
 $
