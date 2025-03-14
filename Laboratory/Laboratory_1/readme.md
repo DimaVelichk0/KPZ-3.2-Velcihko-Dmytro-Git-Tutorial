@@ -9,6 +9,8 @@
 1. Типізація змінних
 1.1 Оголосіть змінні наступних типів: string, number, boolean, array, object.
 1.2 Створіть функцію, яка приймає як аргумент об'єкт із полями name (тип string) та age (тип number) і повертає рядок виду: "Name: John, Age: 30".
+   Рішення
+   ![image]([https://user-images.githubusercontent.com/your-id/image-name.png](https://github.com/dima2005-gif/KPZ-3.2-Velcihko-Dmytro-Git-Tutorial/blob/main/Laboratory/Laboratory_1/images/Task_1.png))
 
 3. Інтерфейси
 2.1 Оголосіть інтерфейс Person, який містить поля:
